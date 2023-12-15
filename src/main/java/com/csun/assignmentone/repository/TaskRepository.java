@@ -1,2 +1,10 @@
-package com.csun.assignmentone.repository;public class TaskRepository {
+package com.csun.assignmentone.repository;
+
+import com.csun.assignmentone.entity.Task;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface TaskRepository
+    extends CrudRepository<Task, Long> {
 }
